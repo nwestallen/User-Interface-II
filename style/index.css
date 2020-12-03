@@ -15,9 +15,9 @@ div {border: 1px solid chartreuse;}
 
 a {border: 1px solid goldenrod;}
 
-p {border: 1px solid purple;} */
+p {border: 1px solid purple;}
 
-footer{border: 1px solid green;}
+footer{border: 1px solid green;} */
 /* Temporary Borders Above */
 body {
     font-family: sans-serif;
@@ -50,7 +50,7 @@ header nav {
 
 header a {
     width: 20%;
-    margin: 0 0.5%
+    margin: 0 2%
 }
 
 a {
@@ -62,13 +62,18 @@ a {
     border-radius: 0.25rem;
 }
 
+main {
+    background: white;
+}
+
 section.profile {
     background: white;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     padding: 3rem 1rem;
-    min-height: 38.3vh;
+    min-height: 38.5vh;
+    max-width: 81rem;
 }
 
 .portrait {
@@ -120,14 +125,21 @@ footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 10vh;
     min-height: 10rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
-footer h3 {
-    margin: 1rem;
+footer a {
+    padding: 0.5rem 1rem;
 }
 
+section.contact {
+    height: 75vh;
+}
 
 
