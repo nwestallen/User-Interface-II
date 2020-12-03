@@ -1,4 +1,18 @@
 /* Add CSS styling here */
-* {
-    color: black;
-}
+header {border: 2px solid orange;}
+
+h1 {border: 2px solid pink;}
+
+nav {border: 2px solid red;}
+
+h2, h3 {border: 2px solid lavender;}
+
+img {border: 2px solid black;}
+
+section {border: 2px solid royalblue;}
+
+div {border: 2px solid chartreuse;}
+
+a {border: 2px solid goldenrod;}
+
+p {border: 2px solid purple;}
