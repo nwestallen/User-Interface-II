@@ -1,33 +1,35 @@
 /* Add CSS styling here */
-header {border: 2px solid orange;}
+/* header {border: 1px solid orange;}
 
-h1 {border: 2px solid pink;}
+h1 {border: 1px solid pink;}
 
-nav {border: 2px solid red;}
+nav {border: 1px solid red;}
 
-h2, h3 {border: 2px solid lavender;}
+h2, h3 {border: 1px solid lavender;}
 
-img {border: 2px solid black;}
+img {border: 1px solid black;}
 
-section {border: 2px solid royalblue;}
+section {border: 1px solid royalblue;}
 
-div {border: 2px solid chartreuse;}
+div {border: 1px solid chartreuse;}
 
-a {border: 2px solid goldenrod;}
+a {border: 1px solid goldenrod;}
 
-p {border: 2px solid purple;}
+p {border: 1px solid purple;} */
 
-footer{border: 2px solid green;}
+footer{border: 1px solid green;}
 /* Temporary Borders Above */
 body {
     font-family: sans-serif;
+    background: red;
 }
 
 header {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     background:lightgrey;
-    min-height: 15vh;
+    height: 15vh;
+    min-height: 12rem;
     justify-content: center;
 }
 
@@ -48,6 +50,7 @@ header nav {
 
 header a {
     width: 20%;
+    margin: 0 0.5%
 }
 
 a {
@@ -56,15 +59,16 @@ a {
     color: black;
     padding: 0.5rem;
     text-align: center;
+    border-radius: 0.25rem;
 }
 
 section.profile {
-    background: skyblue;
+    background: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     padding: 3rem 1rem;
-    min-height: 32.1vh;
+    min-height: 38.3vh;
 }
 
 .portrait {
@@ -76,36 +80,53 @@ section.profile {
     max-width: 95%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0.5rem;
-    width: 64rem;
+    width: 32rem;
 }
 
 .bio a {
     width: 24rem;
     max-width: 95%;
+    color: white;
+    background: #242729;
+    margin: 1rem 0rem;
 }
 
 section.gallery {
-    background: lightgoldenrodyellow;
-    padding: 4rem;
+    background: #242729;
+    padding: 1rem 2.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    min-height: 26.25vh
+    min-height: 26.25vh;
+    max-height: 510px;
+    overflow: auto;
 }
 
 .gallery div {
-    margin: 0.25rem;
+    margin: 1rem 0.25rem;
+    background: white;
+    padding: 0.6rem;
+}
+
+.gallery p {
+    text-align: center;
+    margin-top: 0.75rem;
 }
 
 footer {
-    background: lightpink;
+    background: lightgray;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     height: 10vh;
+    min-height: 10rem;
+}
+
+footer h3 {
+    margin: 1rem;
 }
 
 
