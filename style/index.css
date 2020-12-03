@@ -27,28 +27,33 @@ header {
     display: flex;
     flex-flow: column wrap;
     background:lightgrey;
-    height: 15vh;
+    min-height: 15vh;
     justify-content: center;
 }
 
 header h1 {
     margin: 0.5rem;
+    max-width: 24rem;
+    text-align: center;
 }
 
 header nav {
     display: flex;
     justify-content: space-evenly;
-    width: 48rem;
+    max-width: 48rem;
     align-items: center;
     margin: 0.5rem 2rem;
-    height:25%;
+    height:40%;
+}
+
+header a {
+    width: 20%;
 }
 
 a {
     text-decoration: none;
     background: white;
     color: black;
-    width: 20%;
     padding: 0.5rem;
     text-align: center;
 }
@@ -56,19 +61,29 @@ a {
 section.profile {
     background: skyblue;
     display: flex;
-    justify-content: space-evenly;
-    padding: 4rem;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 3rem 1rem;
+    min-height: 32.1vh;
 }
 
 .portrait {
-    width: 40%;
+    max-width: 95%;
+    margin: 0.5rem;
 }
 
 .bio {
-    width: 40%;
+    max-width: 95%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
+    margin: 0.5rem;
+    width: 64rem;
+}
+
+.bio a {
+    width: 24rem;
+    max-width: 95%;
 }
 
 section.gallery {
@@ -77,6 +92,11 @@ section.gallery {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    min-height: 26.25vh
+}
+
+.gallery div {
+    margin: 0.25rem;
 }
 
 footer {
@@ -87,3 +107,6 @@ footer {
     justify-content: center;
     height: 10vh;
 }
+
+
+
