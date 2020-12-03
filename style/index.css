@@ -52,3 +52,38 @@ a {
     padding: 0.5rem;
     text-align: center;
 }
+
+section.profile {
+    background: skyblue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+}
+
+.portrait {
+    width: 40%;
+}
+
+.bio {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+section.gallery {
+    background: lightgoldenrodyellow;
+    padding: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+footer {
+    background: lightpink;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
