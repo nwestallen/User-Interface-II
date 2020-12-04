@@ -24,17 +24,21 @@ body {
     background: red;
 }
 
+h1 {
+    font-size: 4.4rem;
+}
+
 header {
     display: flex;
     flex-flow: column nowrap;
     background:lightgrey;
-    height: 15vh;
+    height: 10vh;
     min-height: 12rem;
     justify-content: center;
 }
 
 header h1 {
-    margin: 0.5rem;
+    margin: 0.5rem 2rem;
     max-width: 24rem;
     text-align: center;
 }
@@ -78,13 +82,14 @@ section.profile {
     flex-flow: row wrap;
     justify-content: space-evenly;
     padding: 3rem 1rem;
-    min-height: 38.5vh;
+    min-height: 40.7vh;
     max-width: 81rem;
 }
 
 .portrait {
     max-width: 95%;
     margin: 0.5rem;
+    box-shadow: 1px 1px lightgray;
 }
 
 .bio {
@@ -146,7 +151,7 @@ footer a {
 }
 
 section.contact {
-    height: 75vh;
+    height: 76.5vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
