@@ -163,6 +163,23 @@ section.contact {
 }
 
 @media(max-width: 800px) {
+    header {
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    section.profile div {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    section.profile div p {
+        width: 90%;
+    }
+
 }
 
 @media(max-width: 500px) {
