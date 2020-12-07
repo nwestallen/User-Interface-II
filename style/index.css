@@ -1,1 +1,213 @@
 /* Add CSS styling here */
+/* header {border: 1px solid orange;}
+
+h1 {border: 1px solid pink;}
+
+nav {border: 1px solid red;}
+
+h2, h3 {border: 1px solid lavender;}
+
+img {border: 1px solid black;}
+
+section {border: 1px solid royalblue;}
+
+div {border: 1px solid chartreuse;}
+
+a {border: 1px solid goldenrod;}
+
+p {border: 1px solid purple;}
+
+footer{border: 1px solid green;} */
+/* Temporary Borders Above */
+body {
+    font-family: sans-serif;
+    /* background: red; */
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    background:lightgrey;
+    height: 10vh;
+    min-height: 12rem;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0.5rem 2rem;
+    max-width: 24rem;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 48rem;
+    align-items: center;
+    margin: 0.5rem 2rem;
+    height:40%;
+}
+
+header a {
+    width: 20%;
+    margin: 0 2%
+}
+
+a {
+    text-decoration: none;
+    background: white;
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+a:hover {
+    background: #242729;
+    color: white;
+    transition: 0.2s;
+}
+
+main {
+    background: white;
+}
+
+section.profile {
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+    min-height: 40.7vh;
+    max-width: 81rem;
+}
+
+.portrait {
+    max-width: 95%;
+    margin: 0.5rem;
+    box-shadow: 1px 1px lightgray;
+}
+
+.bio {
+    max-width: 95%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0.5rem;
+    width: 32rem;
+}
+
+.bio a {
+    width: 24rem;
+    max-width: 95%;
+    color: white;
+    background: #242729;
+    margin: 1rem 0rem;
+}
+
+.bio a:hover {
+    background: lightgray;
+    color: black;
+}
+
+section.gallery {
+    background: #242729;
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    min-height: 27.32vh;
+    max-height: 510px;
+    overflow: auto;
+}
+
+.gallery div {
+    margin: 1rem 0.25rem;
+    background: white;
+    padding: 0.6rem;
+}
+
+.gallery div img {
+    max-width: 100%;
+}
+
+.gallery p {
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+footer {
+    background: lightgray;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    min-height: 10rem;
+}
+
+footer a {
+    padding: 0.5rem 1rem;
+}
+
+section.contact {
+    height: 76.5vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 800px) {
+    header {
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    section.profile div {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    section.profile div p {
+        width: 90%;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    header {
+        height: 100%;
+    }
+
+    nav {
+        flex-flow: column nowrap;
+    }
+
+    nav a {
+        margin: 1% 0;
+    }
+
+    .gallery div {
+        width: 42%;
+    }
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
