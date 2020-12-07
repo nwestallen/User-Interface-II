@@ -21,7 +21,7 @@ footer{border: 1px solid green;} */
 /* Temporary Borders Above */
 body {
     font-family: sans-serif;
-    background: red;
+    /* background: red; */
 }
 
 h1 {
@@ -178,6 +178,7 @@ section.contact {
 
     section.profile div p {
         width: 90%;
+        text-align: center;
     }
 
 }
@@ -185,22 +186,15 @@ section.contact {
 @media(max-width: 500px) {
 
     header {
-        align-items: center;
         height: 100%;
     }
 
     nav {
-        width: 100%;
         flex-flow: column nowrap;
     }
 
     nav a {
         margin: 1% 0;
-    }
-
-    section.profile div {
-        flex-flow: column nowrap;
-        align-items: center;
     }
 
     .gallery div {
